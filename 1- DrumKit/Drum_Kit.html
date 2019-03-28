@@ -7,6 +7,11 @@
 </head>
 
 <body>
+    <header>
+        <div class='header'>
+            <span class='headerText'>PLAY THE BEAT</span>
+        </div>
+    </header>
         <div class="keys">
             <div data-key="65" class="key">
                 <kbd>A</kbd>
@@ -59,7 +64,8 @@
 </body>
 
 <script>
-    window.addEventListener('keydown', function(e){
+
+    function playSound(e){
         const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
         const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
 
@@ -68,7 +74,18 @@
         audio.play();
 
         key.classList.add('playing');  //key.addClass('playing') jquery version
+    }
 
-    })
+
+    function removeTransition(e){
+        if(e.propertyName !== 'transform') return //skip if it's not transform
+        this.classList.remove('playing') //remove class after its done firing
+    }
+
+    window.addEventListener('keydown', playSound)
+    const keys = document.querySelectorAll('.key');
+    keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+    
+    
 </script>
 </html>
