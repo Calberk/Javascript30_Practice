@@ -14,3 +14,26 @@ body {
 input {
     width: 100px;
 }
+
+:root {
+    --base: #cc0000;
+    --spacing: 10px;
+    --blue: 10px;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    width: 700px;
+    height: 300px;
+}
+
+.h1 {
+    color: var(--base);
+}
+
+a {
+    color: var(--base);
+    text-decoration: none;
+}
