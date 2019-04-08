@@ -7,50 +7,59 @@
     </head>
     <body>
 
+        <div class="header">
+            <h1 class="title">What day is your favorite:</h1>
+            <span class="subTitle">(Select all days that apply)</span>
+        </div>
+        
+
         <div class="inbox">
             <div class="item">
                 <input type="checkbox">
-                <p>This is an inbox layout.</p>
+                <p>Monday</p>
             </div>
             <div class="item">
                 <input type="checkbox">
-                <p>Check one item</p>
+                <p>Tuesday</p>
             </div>
             <div class="item">
                 <input type="checkbox">
-                <p>Hold down your Shift key</p>
+                <p>Wednesday</p>
             </div>
             <div class="item">
                 <input type="checkbox">
-                <p>Check a lower item</p>
+                <p>Thursday</p>
             </div>
             <div class="item">
                 <input type="checkbox">
-                <p>Everything in between should also be set to checked</p>
+                <p>Friday</p>
             </div>
             <div class="item">
                 <input type="checkbox">
-                <p>Try to do it without any libraries</p>
+                <p>Saturday</p>
             </div>
             <div class="item">
                 <input type="checkbox">
-                <p>Just regular JavaScript</p>
+                <p>Sunday</p>
             </div>
             <div class="item">
                 <input type="checkbox">
-                <p>Good Luck!</p>
+                <p>Weekends</p>
             </div>
             <div class="item">
                 <input type="checkbox">
-                <p>Don't forget to tweet your result!</p>
+                <p>None of the above!</p>
             </div>
         </div>
                 
     </body>
 
     <script>
-        const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
+        const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"');
+        checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
+        
         let lastChecked;
+
         function handleCheck(e) {
         // Check if they had the shift key down
         // AND check that they are checking it
@@ -62,7 +71,6 @@
             console.log(checkbox);
             if (checkbox === this || checkbox === lastChecked) {
                 inBetween = !inBetween;
-                console.log('Starting to check them in between!');
             }
             if (inBetween) {
                 checkbox.checked = true;
@@ -71,7 +79,7 @@
         }
         lastChecked = this;
         }
-        checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
+        
     </script>
 
 </html>
