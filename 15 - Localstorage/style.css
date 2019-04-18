@@ -77,3 +77,9 @@ padding: 10px;
 outline: 0;
 border: 1px solid rgba(0,0,0,0.1);
 }
+
+.buttons {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
