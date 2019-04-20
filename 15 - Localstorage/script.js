@@ -86,7 +86,9 @@ itemsList.addEventListener('click', toggleDone);
 deleteBtn.addEventListener('click', deletePlates);
 // selectAllBtn.addEventListener('click', selectAll);
 // clearAllBtn.addEventListener('click', clearAll)
-clearAllBtn.addEventListener('click', changeAllToValue(false));
+clearAllBtn.addEventListener('click', function(){
+    changeAllToValue(false);
+});
 selectAllBtn.addEventListener('click', function(){
     changeAllToValue(true);
 })
