@@ -11,6 +11,7 @@ body {
     margin: 0;
     font-family: san-serif;
     background: #003262;
+    color: #fff;
 }
 
 .wrapper {
@@ -23,9 +24,9 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
-    background: rgba(0,0,0,0.5);
-    border-radius: 10px
+    color: #fff;
+    background: rgba(236, 233, 233, 0.2);
+    /* border-radius: 10px */
 }
 
 .highlight {
@@ -33,10 +34,11 @@ a {
     border-bottom: 2px solid white;
     position: absolute;
     top: 0;
-    background: white;
+    background: rgba(253, 181, 21);
+    /* color: black; */
     left: 0;
     z-index: -1;
-    border-radius: 20px;
+    /* border-radius: 10px; */
     display: block;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
@@ -53,5 +55,5 @@ a {
     display: inline-block;
     padding: 5px;
     margin: 0 20px;
-    color: black;
+    /* color: black; */
 }
