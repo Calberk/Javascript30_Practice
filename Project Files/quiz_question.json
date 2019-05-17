@@ -1,75 +1,75 @@
-[
-    {
-        "userID": 1,
-        "quizzes": [
-            {
-                "id": 1,
-                "quiz_type": "1",
-                "wordList": ["Colleague", "Comrades", "Coolant", "Complex", "Conquer"],
-                "questions": [
-                    {
-                        "id": 1,
-                        "type": "multiple_choice",
-                        "question": "A companion who shares one's activities or is a fellow member of an organization",
-                        "options": {
-                            "a": "Comrades",
-                            "b": "Colleague",
-                            "c": "Already",
-                            "d": "Conversate"
-                        },
-                        "selection": "a",
-                        "correct": true
+{
+    "userID": 1,
+    "quizzes": [
+        {
+            "id": 1,
+            "course": "English 101",
+            "book": "1984",
+            "quiz_type": "1",
+            "wordList": ["Colleague", "Comrades", "Coolant", "Complex", "Conquer"],
+            "questions": [
+                {
+                    "id": 1,
+                    "type": "multiple_choice",
+                    "question": "A companion who shares one's activities or is a fellow member of an organization",
+                    "options": {
+                        "a": "Comrades",
+                        "b": "Colleague",
+                        "c": "Already",
+                        "d": "Conversate"
                     },
-                    {
-                        "id": 2,
-                        "type": "fill_in",
-                        "question": "When I arrived t the office, my ________ were already clustered around the kettle.",
-                        "options": {
-                            "a": "Comrades",
-                            "b": "Colleague",
-                            "c": "Conjoin",
-                            "d": "Conversate"
-                        },
-                        "selection": "b",
-                        "correct": true
+                    "selection": "a",
+                    "correct": true
+                },
+                {
+                    "id": 2,
+                    "type": "fill_in",
+                    "question": "When I arrived t the office, my ________ were already clustered around the kettle.",
+                    "options": {
+                        "a": "Comrades",
+                        "b": "Colleague",
+                        "c": "Conjoin",
+                        "d": "Conversate"
                     },
-                    {
-                        "id": 3,
-                        "type": "spelling",
-                        "question": ["_","_","_","_","_","_","_","_"],
-                        "options": ["a", "c", "o", "o", "l", "f", "g", "i", "t"],
-                        "selection": "coolant",
-                        "sound_file": "url",
-                        "correct": true
+                    "selection": "a",
+                    "correct": false
+                },
+                {
+                    "id": 3,
+                    "type": "spelling",
+                    "question": ["_","_","_","_","_","_","_","_"],
+                    "options": ["a", "c", "o", "o", "l", "f", "g", "i", "t"],
+                    "selection": "coolant",
+                    "sound_file": "url",
+                    "correct": true
+                },
+                {
+                    "id": 4,
+                    "type": "multiple_choice",
+                    "question": "Consisting of many different and connected parts",
+                    "options": {
+                        "a": "Conquer",
+                        "b": "Conjoin",
+                        "c": "Complex",
+                        "d": "Conversate"
                     },
-                    {
-                        "id": 4,
-                        "type": "multiple_choice",
-                        "question": "Consisting of many different and connected parts",
-                        "options": {
-                            "a": "Conquer",
-                            "b": "Conjoin",
-                            "c": "Complex",
-                            "d": "Conversate"
-                        },
-                        "selection": "b",
-                        "correct": true
+                    "selection": "d",
+                    "correct": false
+                },
+                {
+                    "id": 5,
+                    "type": "fill_in",
+                    "question": "In this gradual manner were the French led to _______ Algeria.",
+                    "options": {
+                        "a": "Comrades",
+                        "b": "Colleague",
+                        "c": "Conquer",
+                        "d": "Conversate"
                     },
-                    {
-                        "id": 5,
-                        "type": "fill_in",
-                        "question": "In this gradual manner were the French led to conquer Algeria.",
-                        "options": {
-                            "a": "Comrades",
-                            "b": "Colleague",
-                            "c": "Conquer",
-                            "d": "Conversate"
-                        },
-                        "selection": "b",
-                        "correct": true
-                    }
-                ]
-            }
-        ]
-    }
-]
+                    "selection": "c",
+                    "correct": true
+                }
+            ]
+        }
+    ]
+}
